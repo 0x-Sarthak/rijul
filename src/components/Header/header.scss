@@ -1,0 +1,17 @@
+header {
+	margin-inline: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	ul {
+		list-style: none;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 5rem;
+		li {
+			cursor: pointer;
+		}
+	}
+}
