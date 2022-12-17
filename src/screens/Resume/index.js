@@ -8,8 +8,8 @@ const Resume = () => {
 		<div style={{ textAlign: "center" }}>
 			<Header />
 			<div className="resume-container">
-			<div>
-				<h1>Work Experience</h1>
+			<div className="reactive-container">
+				<h3 className="reactive">Work Experience</h3>
 				<h3>Volunteering and Leadership</h3>
 				<h3>Education</h3>
 				<h3>Resume</h3>

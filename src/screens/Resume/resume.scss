@@ -78,7 +78,18 @@ $home-text-height: 100px;
       
     }
   }
+  
   .text-area::-webkit-scrollbar {
     display: none;
   }
   
+  .reactive{
+    color: #cf5757;
+    font-size: 28px;
+  }
+  
+  .reactive-container{
+    text-align: start;
+    line-height:35px;
+
+  }
