@@ -1,0 +1,84 @@
+$home-text-width: 200px;
+$home-text-height: 100px;
+.resume-container {
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1150px;
+    gap: 12rem;
+    margin: 0px 100px 0px 300px;
+  
+    img {
+      width: $home-text-width;
+      height: $home-text-height;
+    }
+  
+    .text-area {
+      font-family: "Josefin Sans", sans-serif;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+      flex-wrap: nowrap;
+      overflow-y: scroll;
+      height: 465px;
+      margin-right: 120px;
+      margin-top: 0px!important;
+      h1 > span {
+        color: #cf5757;
+      }
+      p {
+        width: 100%;
+        height: 60px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 40px;
+      }
+      h1{
+        color: #cf5757!important;
+        gap: 10rem!important;
+        margin: 10px 0px;
+        ;
+      }
+      h2{
+        color: #cf5757;
+        gap: 10rem!important;
+        margin: 10px 0px;
+
+      }
+      h3,
+      h4{
+        color: #cf5757;
+        margin: 10px 0px;
+        gap: 2rem;
+      }
+      h5,
+      h6,
+
+      ul{
+        gap: 2rem;
+        list-style-type: circle!important;
+        
+        li{
+            
+            list-style-type: none!important;
+            margin: 10px 0px!important;
+        }
+        li:not(:last-child)
+        {
+            margin-bottom: 15px;
+        }
+        li:before{
+            content: "\25CF";
+            margin: 0px 5px;
+        }
+      }
+      
+    }
+  }
+  .text-area::-webkit-scrollbar {
+    display: none;
+  }
+  

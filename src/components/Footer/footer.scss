@@ -1,3 +1,22 @@
 footer {
-	cursor: pointer;
+  cursor: pointer;
+  margin-left: 45%;
+
+  .view-invert {
+    background: red;
+    width: 100px;
+    height: 100px;
+  }
+
+  transition: all 1s;
+  &:hover {
+    // display: none;
+    transform: translateY(-60px);
+    transition: all 1s;
+    .inverted-view {
+      display: flex !important;
+      flex-direction: row !important;
+      height: 10px;
+    }
+  }
 }
