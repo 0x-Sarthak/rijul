@@ -7,6 +7,18 @@ $about-image-height: 400px;
   align-items: center;
   justify-content: center;
   gap: 12rem;
+  h1{
+    padding-bottom: 30px;
+  }
+  p, h4{
+    padding-bottom:26px;
+  }
+
+  h5{
+    padding-bottom: 6px;
+  }
+
+
 
   div > img {
     width: $about-image-width;
@@ -32,9 +44,9 @@ $about-image-height: 400px;
       color: #cf5757;
     }
     p {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 40px;
+      // font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 }
