@@ -7,7 +7,7 @@ $home-text-height: 100px;
     justify-content: center;
     width: 1150px;
     gap: 12rem;
-    margin: 0px 100px 0px 300px;
+    margin: 0px 100px 0px 200px;
   
     img {
       width: $home-text-width;
@@ -86,10 +86,12 @@ $home-text-height: 100px;
   .reactive{
     color: #cf5757;
     font-size: 28px;
+    width: 500px;
   }
   
   .reactive-container{
     text-align: start;
     line-height:35px;
+    width: 300px;
 
   }

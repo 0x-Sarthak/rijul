@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "react-icons": "^4.7.1"
   }
 }
