@@ -11,7 +11,7 @@ $girl-height: 350px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10rem;
+	gap: 4rem;
 	flex-direction: row;
 	margin: 10px;
 
@@ -47,11 +47,11 @@ $girl-height: 350px;
 		margin-left: 3px;
 
 		position: absolute;
-		padding-top: $project-height - 200px;
+		padding-top: $project-height - 130px;
 		top: 0;
 		left: 0;
 		width: $project-width - 4px;
-		height: $project-height - 10px;
+		height: $project-height - 20px;
 		border-radius: 10px;
 		text-align: center;
 		background: linear-gradient(

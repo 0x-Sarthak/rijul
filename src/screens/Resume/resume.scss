@@ -7,7 +7,7 @@ $home-text-height: 100px;
     justify-content: center;
     width: 1150px;
     gap: 12rem;
-    margin: 0px 100px 0px 200px;
+    margin: 0px 100px 0px 180px;
   
     img {
       width: $home-text-width;
@@ -62,9 +62,11 @@ $home-text-height: 100px;
         list-style-type: circle!important;
         
         li{
-            
+            text-align: left;
             list-style-type: none!important;
             margin: 10px 0px!important;
+            font-size: 14px;
+            line-height:20px;
         }
         li:not(:last-child)
         {

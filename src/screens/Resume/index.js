@@ -4,14 +4,13 @@ import Header from "../../components/Header";
 import "./resume.scss";
 import {useInView} from "react-intersection-observer";
 const Resume = () => {
-	const { ref: volunteer, inView: volunteerIsVisible } = useInView({threshold: 1});
-	const { ref: education, inView: educationIsVisible } = useInView({threshold: 1});
+	const { ref: volunteer, inView: volunteerIsVisible } = useInView({threshold: 0.4});
+	const { ref: education, inView: educationIsVisible } = useInView({threshold: 0.8});
 	const { ref: experience, inView: experienceIsVisible } = useInView({threshold: 0.3});
 
 	  const [active, setActive] = useState('');
 
 	  useEffect(() => {
-
 		if(educationIsVisible) setActive('education')
 		if(volunteerIsVisible) setActive('volunteer')
 		if(experienceIsVisible) setActive('experience')
@@ -32,7 +31,7 @@ const Resume = () => {
 			<h2> UI/UX Designer Intern</h2>
 			<h4>Foreportal India Private Limited Gurgaon</h4>
 			<h5>20-06-2022 to 20-12-2022</h5>
-			<br></br>
+			
 			<ul>
 			<li>Carried out competitive analysis, qualitative research, brainstorming, and ideation for Black Friday Cyber Monday (BFCM) campaign</li>
 			<li>Designed sitemap, wireframe, prototype and UI of CheapOAir web page and mobile app for better user engagement.</li>
@@ -45,10 +44,10 @@ const Resume = () => {
 			<h2> Java Intern</h2>
 			<h4>Allsoft Solutions and Services Private Limited, Chandigarh</h4>
 			<h5>15 June 2020 - 31 July 2020</h5>
-			<br></br>
 			<ul>
 			<li>
 				Developed project-Student Attendance Management System using Java and MySql Database</li></ul>
+			<div ref={volunteer}>
 			<h2>Exceutive member</h2>
 			<h4>Toastmasters Club , Chitkara University, Punjab</h4>
 			<h5> 2019 - Present</h5>
@@ -73,7 +72,6 @@ const Resume = () => {
 			Organised National level Talent Hunt and Poetry Competition.
 			</li>
 			</ul>
-			<div ref={volunteer}>
 			<h2>Volunteer</h2>
 			<h4>Swarmani Youth Welfare Association, Chandigarh</h4>
 			<h5>March 2020 - Present</h5>
