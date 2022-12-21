@@ -5,8 +5,9 @@ import Header from "../../components/Header";
 import "./home.scss";
 const Home = () => {
 	return (
-		<>
+		<div>
 			<Header />
+			<div className="page-layout">
 			<div className="home-container">
 				<div>
 					<img src={Hi} alt="Hi.png" />
@@ -22,9 +23,10 @@ const Home = () => {
 						new things.
 					</p>
 				</div>
+				</div>
 			</div>
 			<Footer />
-		</>
+		</div>
 	);
 };
 

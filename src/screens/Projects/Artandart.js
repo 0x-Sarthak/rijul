@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../components/Header"
 import One from "../../assets/Artandart/One.png";
 import Two from "../../assets/Artandart/Two.png";
 import Three from "../../assets/Artandart/Three.png";
@@ -13,6 +14,8 @@ import Eleven from "../../assets/Artandart/Eleven.png";
 
 const Artandart = () => {
 	return (
+		<>
+		<Header />
 		<div className="project-view-wrapper">
 			<img src={One} alt=" Wow" />
 			<img src={Two} alt=" woexz" />
@@ -26,6 +29,7 @@ const Artandart = () => {
 			<img src={Ten} alt=" sdfas" />
 			<img src={Eleven} alt=" sdfas" />
 		</div>
+		</>
 	);
 };
 

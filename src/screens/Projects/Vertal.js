@@ -20,9 +20,11 @@ import Eighteen from "../../assets/Vertal/Eighteen.png";
 import Nineteen from "../../assets/Vertal/Nineteen.png";
 import Twenty from "../../assets/Vertal/Twenty.png";
 import TwentyOne from "../../assets/Vertal/TwentyOne.png";
-
+import Header from "../../components/Header";
 const Vertal = () => {
 	return (
+		<>
+		<Header />
 		<div className="project-view-wrapper">
 			<img src={One} alt=" Wow" />
 			<img src={Two} alt=" woexz" />
@@ -46,6 +48,7 @@ const Vertal = () => {
 			<img src={Twenty} alt=" sdfas" />
 			<img src={TwentyOne} alt=" sdfas" />
 		</div>
+		</>
 	);
 };
 

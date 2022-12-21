@@ -7,6 +7,7 @@ $home-girl-height: 499px;
 	align-items: center;
 	justify-content: center;
 	gap: 4rem;
+	flex-direction: row;
 	margin-left: 60px;
 
 	img {
@@ -32,6 +33,35 @@ $home-girl-height: 499px;
 			font-weight: 400;
 			font-size: 20px;
 			line-height: 40px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+
+	.home-container{
+
+		flex-direction: column !important;
+		justify-content: start !important;
+		align-items: center !important;
+        margin-left: 0px !important;
+		.text-area{
+			width: 412px !important;
+			font-size:16px !important;
+			padding-right: 20px !important;
+			align-items: center !important;
+
+			h1{
+				font-size: 28px !important;
+			}
+			p{
+				font-size: 18px !important
+			}
+		}
+		img{
+			margin-top: 20px;
+			width: 240px;
+			height: 299px;
 		}
 	}
 }

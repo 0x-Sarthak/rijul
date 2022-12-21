@@ -4,15 +4,9 @@ import Header from "../../components/Header";
 import "./resume.scss";
 import { useInView } from "react-intersection-observer";
 const Resume = () => {
-	const { ref: volunteer, inView: volunteerIsVisible } = useInView({
-		threshold: 0.7,
-	});
-	const { ref: education, inView: educationIsVisible } = useInView({
-		threshold: 1,
-	});
-	const { ref: experience, inView: experienceIsVisible } = useInView({
-		threshold: 0.2,
-	});
+	const { ref: experience, inView: experienceIsVisible } = useInView({threshold: 0.5});
+	const { ref: volunteer, inView: volunteerIsVisible } = useInView({threshold: 0.8});
+	const { ref: education, inView: educationIsVisible } = useInView({threshold: 0.8});
 
 	const [active, setActive] = useState("");
 
@@ -20,25 +14,27 @@ const Resume = () => {
 		if (educationIsVisible) setActive("education");
 		if (volunteerIsVisible) setActive("volunteer");
 		if (experienceIsVisible) setActive("experience");
-	}, []);
+	}, [experienceIsVisible,educationIsVisible,volunteerIsVisible]);
 	return (
 		<div style={{ textAlign: "center" }}>
 			<Header />
+			<div className="page-layout">
 			<div className="resume-container">
 				<div className="reactive-container">
-					<h3 className={experienceIsVisible ? "reactive" : ""}>
+					<span style={{fontSize: "20px"}} className={experienceIsVisible ? "reactive" : ""}>
 						Work Experience
-					</h3>
-					<h3 className={volunteerIsVisible ? "reactive" : ""}>
+					</span>
+					<span style={{fontSize: "20px"}} className={volunteerIsVisible ? "reactive" : ""}>
 						Volunteering and Leadership
-					</h3>
-					<h3 className={educationIsVisible ? "reactive" : ""}>Education</h3>
-					<h3>Resume</h3>
+					</span>
+					<span style={{fontSize: "20px"}} className={educationIsVisible ? "reactive" : ""}>Education</span>
+					{/* <h3>Resume</h3> */}
+					<br></br>
 				</div>
 				<div className="text-area">
 					<div ref={experience}>
-						<h2> UI/UX Designer Intern</h2>
-						<h4>Foreportal India Private Limited Gurgaon</h4>
+						<h1> UI/UX Designer Intern</h1>
+						<h3>Foreportal India Private Limited Gurgaon</h3>
 						<h5>20-06-2022 to 20-12-2022</h5>
 
 						<ul>
@@ -59,8 +55,8 @@ const Resume = () => {
 						</ul>
 					</div>
 
-					<h2> Java Intern</h2>
-					<h4>Allsoft Solutions and Services Private Limited, Chandigarh</h4>
+					<h1> Java Intern</h1>
+					<h3>Allsoft Solutions and Services Private Limited, Chandigarh</h3>
 					<h5>15 June 2020 - 31 July 2020</h5>
 					<ul>
 						<li>
@@ -69,8 +65,8 @@ const Resume = () => {
 						</li>
 					</ul>
 					<div ref={volunteer}>
-						<h2>Exceutive member</h2>
-						<h4>Toastmasters Club , Chitkara University, Punjab</h4>
+						<h1>Exceutive member</h1>
+						<h3>Toastmasters Club , Chitkara University, Punjab</h3>
 						<h5> 2019 - Present</h5>
 						<ul>
 							<li>
@@ -78,8 +74,8 @@ const Resume = () => {
 							</li>
 						</ul>
 						<br></br>
-						<h2>Editor</h2>
-						<h4>Inner wheel club utkarsh, Ambala Cantt</h4>
+						<h1>Editor</h1>
+						<h3>Inner wheel club utkarsh, Ambala Cantt</h3>
 						<h5>2021 - Present</h5>
 						<ul>
 							<li>
@@ -93,8 +89,8 @@ const Resume = () => {
 								Organised National level Talent Hunt and Poetry Competition.
 							</li>
 						</ul>
-						<h2>Volunteer</h2>
-						<h4>Swarmani Youth Welfare Association, Chandigarh</h4>
+						<h1>Volunteer</h1>
+						<h3>Swarmani Youth Welfare Association, Chandigarh</h3>
 						<h5>March 2020 - Present</h5>
 						<ul>
 							<li>
@@ -105,8 +101,8 @@ const Resume = () => {
 					</div>
 
 					<div ref={education}>
-						<h2> B.E. CSE specilisation in UX/UI</h2>
-						<h4>Chitkara University Punjab</h4>
+						<h1> B.E. CSE specilisation in UX/UI</h1>
+						<h3>Chitkara University Punjab</h3>
 						<h5> August 2019 - june 2023</h5>
 						<ul>
 							<li>CGPA - 9.78 (till 6th Semester)</li>
@@ -121,7 +117,7 @@ const Resume = () => {
 					<h5>Untill 2017</h5>
 				</div>
 			</div>
-
+        </div>
 			<Footer />
 		</div>
 	);

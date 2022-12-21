@@ -3,11 +3,11 @@ $project-height: 500px;
 $project-width-md: 450px;
 $project-height-md: 350px;
 
-$girl-width: 440px;
-$girl-height: 440px;
+$girl-width: 410px;
+$girl-height: 410px;
 
 .project-container {
-	min-height: 80vh;
+	min-height: 83vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -178,9 +178,10 @@ $girl-height: 440px;
 	}
 
 	.image .image__overlay {
-		padding-top: $project-height-md - 200px !important;
+		padding-top: $project-height-md - 180px !important;
 		font-size: 12px;
 		width: $project-width-md;
+		height: $project-height-md;
 	}
 }
 

@@ -1,6 +1,16 @@
 footer {
   cursor: pointer;
-  margin-left: 45%;
+
+   
+  .footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+
+  }
 
   .view-invert {
     background: red;
@@ -8,11 +18,47 @@ footer {
     height: 100px;
   }
 
+  .footer-icons{
+    display: flex;
+    gap: 20px;
+    padding: 12px;
+    // opacity: 0;
+    height: 2px;
+
+    // font-size: 25px;
+
+    a{
+      color: black !important;
+      
+    }
+    
+  }
+  .inverted-view {
+    display: none ;
+    flex-direction: row !important;
+    height: 10px;
+  }
+  
+  img{width: 500px;
+  
+  transform: translateY(-8px) !important;
+  }
   transition: all 1s;
   &:hover {
     // display: none;
+
+    .footer-container{
+      span{
+        color: #cf5757
+      }
+    }
+    
     transform: translateY(-30px);
-    transition: all 1s;
+    transition: all 0.5s;
+    .footer-icons{
+       opacity: 1;
+      transition: opacity 1s;
+    }
     .inverted-view {
       display: flex !important;
       flex-direction: row !important;

@@ -16,9 +16,11 @@ import Fourteen from "../../assets/Wishtree/Fourteen.png";
 import Fifteen from "../../assets/Wishtree/Fifteen.png";
 import Sixteen from "../../assets/Wishtree/Sixteen.png";
 import Seventeen from "../../assets/Wishtree/Seventeen.png";
-
+import Header from "../../components/Header";
 const Wishtree = () => {
 	return (
+		<>
+		<Header />
 		<div className="project-view-wrapper">
 			<img src={One} alt=" Wow" />
 			<img src={Two} alt=" woexz" />
@@ -38,6 +40,7 @@ const Wishtree = () => {
 			<img src={Sixteen} alt=" sdfas" />
 			<img src={Seventeen} alt=" sdfas" />
 		</div>
+		</>
 	);
 };
 

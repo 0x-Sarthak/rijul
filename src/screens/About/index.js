@@ -7,6 +7,7 @@ const About = () => {
 	return (
 		<>
 			<Header />
+			<div className="page-layout">
 			<div className="about-container">
 				<div>
 					<img src={Girl} alt="Hi.png" />
@@ -22,9 +23,9 @@ const About = () => {
 						and communication abilities.
 					</p>
 
-					<h4> My Beliefs</h4>
+					<h2> My Beliefs</h2>
 					<div>
-						<h5> Everything revolves around passion. </h5>
+						<h3> Everything revolves around passion. </h3>
 						<p>
 							I believe that working with passion is extremely important. It not
 							only keeps us motivated and optimistic, but it also serves as a
@@ -32,7 +33,7 @@ const About = () => {
 						</p>
 					</div>
 					<div>
-						<h5>Be kind.</h5>
+						<h3>Be kind.</h3>
 						<p>
 							Kindness has the power to change the world for the better. Even
 							the most insignificant acts of kindness leave their imprints on
@@ -40,7 +41,7 @@ const About = () => {
 						</p>
 					</div>
 					<div>
-						<h5>Simplicity is the ultimate sophistication.</h5>
+						<h3>Simplicity is the ultimate sophistication.</h3>
 						<p>
 							Simplicity facilitates the smooth flow of things, whether at work
 							or in life. It produces open-mindedness and clarifies our
@@ -48,6 +49,7 @@ const About = () => {
 						</p>
 					</div>
 				</div>
+			</div>
 			</div>
 			<Footer />
 		</>

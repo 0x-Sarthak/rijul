@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import {Link} from "react-router-dom"
 import "./footer.scss";
-
+import Line from "./line.png"
+import {ImLinkedin} from "react-icons/im"
+import {GoMail} from "react-icons/go"
 const Footer = () => {
   const [showCards, setShowCards] = useState(false);
   return (
     <footer
-      style={{ textAlign: "center", width: "150px" }}
       onMouseOver={(event) => {
         event.stopPropagation();
         setShowCards(true);
@@ -16,6 +18,9 @@ const Footer = () => {
       }}
     >
       <div className="footer-container">
+      <span>
+      <img src={Line} />
+      </span>
         <span>Let's connect</span>
         <div
           className="inverted-view"
@@ -23,11 +28,14 @@ const Footer = () => {
             display: showCards ? "block" : "none",
           }}
         >
-          {/* <ul>
-            <li>One</li>
-            <li>Two</li>
-            <li>Three</li>
-          </ul> */}
+          <span className="footer-icons">   
+          <a href="https://www.linkedin.com/in/-rijuljain-/" target="_blank">
+            <ImLinkedin style={{color: "black", fill: "black", fontSize: "25px" }} />
+          </a>
+          <a href="mailto:rijuljainwork@gmail.com" style={{color: "black",fill: "black", fontSize: "28px", marginTop: "-2px"}} >
+            <GoMail />
+          </a>
+          </span>
         </div>
       </div>
     </footer>

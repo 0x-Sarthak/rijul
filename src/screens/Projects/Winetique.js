@@ -4,9 +4,11 @@ import Two from "../../assets/Winetique/Two.png";
 import Three from "../../assets/Winetique/Three.png";
 import Four from "../../assets/Winetique/Four.png";
 import Five from "../../assets/Winetique/Five.png";
-
+import Header from "../../components/Header";
 const Winetique = () => {
 	return (
+		<>
+		<Header />
 		<div className="project-view-wrapper">
 			<img src={One} alt=" Wow" />
 			<img src={Two} alt=" woexz" />
@@ -14,6 +16,7 @@ const Winetique = () => {
 			<img src={Four} alt=" sdfas" />
 			<img src={Five} alt=" sdfas" />
 		</div>
+		</>
 	);
 };
 
